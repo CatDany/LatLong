@@ -21,8 +21,10 @@
         $("#coords").html("ERROR #" + err.code);
     };
     
-    $("#button").click(function() {
-        navigator.geolocation.getCurrentPosition(success, error, options);
+    $(function() {
+        $("#button").click(function() {
+            navigator.geolocation.getCurrentPosition(success, error, options);
+        });
     });
     </script>
     
