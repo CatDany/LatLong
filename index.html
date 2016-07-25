@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
     <head>
         <title>CatDany's LatLong</title>
@@ -14,7 +14,7 @@
 
     function success(pos) {
       var crd = pos.coords;
-      $("#coords").html("@" + crd.latitude + ";" + crd.longitude + "�" + crd.accuracy);
+      $("#coords").html("@" + crd.latitude + ";" + crd.longitude + "±" + crd.accuracy);
     };
 
     function error(err) {
